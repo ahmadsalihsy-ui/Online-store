@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="متجر إلكتروني تجريبي بتصميم متجاوب باستخدام HTML وCSS وJavaScript">
+  <title>متجرنا | الصفحة الرئيسية</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><span class="logo-mark">م</span> متجرنا</a>
+      <nav class="main-nav" aria-label="القائمة الرئيسية">
+        <a class="active" href="index.html">الرئيسية</a>
+        <a href="products.html">المنتجات</a>
+        <a class="cart-link" href="cart.html">سلة المشتريات <span class="cart-count" data-cart-count>0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <span class="eyebrow">تسوّق بذكاء</span>
+          <h1>كل ما تحتاجه، <span>في مكان واحد.</span></h1>
+          <p>اكتشف مجموعة مختارة من المنتجات اليومية بتجربة تسوق بسيطة وسهلة.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="products.html">تصفح المنتجات <span aria-hidden="true">←</span></a>
+            <a class="btn btn-ghost" href="#features">اكتشف مميزاتنا</a>
+          </div>
+          <div class="hero-note"><span class="status-dot"></span> تجربة متجر تجريبية قابلة للتطوير</div>
+        </div>
+        <div class="hero-art" aria-label="رسم توضيحي لصندوق تسوق" role="img">
+          <div class="art-circle"></div>
+          <div class="shopping-bag"><div class="bag-handle"></div><div class="bag-face">م</div></div>
+          <div class="floating-card floating-one">✦ جودة مختارة</div>
+          <div class="floating-card floating-two">✓ تسوق سهل</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="features">
+      <div class="section-heading">
+        <div><span class="eyebrow">لماذا متجرنا؟</span><h2>تجربة تسوق مريحة</h2></div>
+        <p>واجهة واضحة تساعدك على اكتشاف المنتجات وإضافتها إلى سلتك بسهولة.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><span class="feature-icon">◇</span><h3>منتجات متنوعة</h3><p>تصفح مجموعة من المنتجات التجريبية ضمن تصميم منظم.</p></article>
+        <article class="feature-card"><span class="feature-icon">↗</span><h3>سهولة الاستخدام</h3><p>تنقل بسيط بين الصفحة الرئيسية والمنتجات والسلة.</p></article>
+        <article class="feature-card"><span class="feature-icon">♡</span><h3>تصميم متجاوب</h3><p>واجهة تتكيف مع شاشات الكمبيوتر والهواتف.</p></article>
+      </div>
+    </section>
+
+    <section class="section products-preview">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow">اختياراتنا</span><h2>منتجات مميزة</h2></div>
+          <a class="text-link" href="products.html">عرض كل المنتجات ←</a>
+        </div>
+        <div class="product-grid" id="featuredProducts"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><a class="logo" href="index.html"><span class="logo-mark">م</span> متجرنا</a><p>مشروع واجهة أمامية تجريبي باستخدام HTML وCSS وJavaScript.</p><span>© <span data-year></span> متجرنا</span></div></footer>
+</body>
+</html>

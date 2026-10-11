@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المنتجات | متجرنا</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header"><div class="container header-inner">
+    <a class="logo" href="index.html"><span class="logo-mark">م</span> متجرنا</a>
+    <nav class="main-nav" aria-label="القائمة الرئيسية"><a href="index.html">الرئيسية</a><a class="active" href="products.html">المنتجات</a><a class="cart-link" href="cart.html">سلة المشتريات <span class="cart-count" data-cart-count>0</span></a></nav>
+  </div></header>
+  <main class="section container">
+    <div class="page-intro"><span class="eyebrow">تشكيلتنا</span><h1>كل المنتجات</h1><p>ابحث عن المنتج المناسب لك وأضفه إلى سلة المشتريات.</p></div>
+    <div class="toolbar">
+      <label class="search-box"><span>⌕</span><input id="productSearch" type="search" placeholder="ابحث عن منتج..." aria-label="ابحث عن منتج"></label>
+      <label class="sort-box">ترتيب حسب
+        <select id="sortProducts"><option value="default">الافتراضي</option><option value="low">السعر: من الأقل للأعلى</option><option value="high">السعر: من الأعلى للأقل</option></select>
+      </label>
+    </div>
+    <p class="results-line" id="resultsCount" aria-live="polite"></p>
+    <div class="product-grid" id="allProducts"></div>
+    <div class="empty-state hidden" id="noProducts"><span>⌕</span><h2>لم نعثر على منتجات</h2><p>جرّب تغيير كلمة البحث.</p></div>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><a class="logo" href="index.html"><span class="logo-mark">م</span> متجرنا</a><p>مشروع واجهة أمامية تجريبي.</p><span>© <span data-year></span> متجرنا</span></div></footer>
+</body>
+</html>
